@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Control</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <form class="border border-2 border-primary m-1">
+        <div class="mb-2">
+            <label class="form-label" for="exampleemail">Email :</label>
+            <input class="form-control" type="email" id="exampleemail" placeholder="Input Email" />
+        </div>
+        <div class="mb-2">
+            <label class="form-label" for="examplepassword">Password :</label>
+            <input class="form-control" type="password" id="examplepassword" placeholder="Input Password" />
+        </div>
+        <div class="mb-2 form-check">
+            <input class="form-check-input" type="checkbox" id="examplecheckbox" />
+            <label for="examplecheckbox" class="form-check-label">Check Me</label>
+        </div>
+        <div class="mb-2">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+
+    <form class="container m-1 p-0 border border-5 border-warning">
+        <div class="row">
+            <label class="col-md-2 col-form-label" for="exampleemail">Email :</label>
+            <div class="col-md-2">
+                <input class="form-control form-control-plaintext" readonly type="email" id="exampleemail"
+                    placeholder="Input Email" />
+            </div>
+            <label class="col-md-2 col-form-label" for="examplepassword">Password :</label>
+            <div class="col-md-2">
+                <input class="form-control" type="password" value="123" id="examplepassword"
+                    placeholder="Input Password" disabled readonly />
+            </div>
+            <div class="col-md-2 form-check ms-3">
+                <input class="form-check-input" type="checkbox" id="examplecheckbox" />
+                <label class="form-check-label" for="examplecheckbox2">Checkout</label>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-success" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
