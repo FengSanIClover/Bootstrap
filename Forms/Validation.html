@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <form class="container">
+        <div class="row  mb-3">
+            <label class="col-md-2 col-form-label" for="firstName">FirstName : </label>
+            <div class="col-md-4">
+                <input type="text" class="form-control is-valid" id="firstName" placeholder="FirstName" required>
+                <div class="valid-feedback">
+                    OK
+                </div>
+            </div>
+            <label class="col-md-2 col-form-label" for="lastName">LastName : </label>
+            <div class="col-md-4">
+                <input type="text" class="form-control is-invalid" id="lastName" placeholder="LastName" required>
+                <diiv class="invalid-feedback">
+                    Error
+                </diiv>
+            </div>
+        </div>
+        <div class="row  mb-3">
+            <div class="col-12">
+                <div class="form-check">
+                    <input id="checkout" type="checkbox" class="form-check-input" required />
+                    <label for="checkout" class="form-check-label">Checkout</label>
+                </div>
+            </div>
+        </div>
+        <div class="row  mb-3">
+            <label for="email" class="col-md-2 col-form-check-label">Email:</label>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input id="email" type="text" class="form-control" required />
+                    <div class="input-group-text">
+                        @
+                    </div>
+                    <input id="emailAddress" type="text" class="form-control" required />
+                </div>
+            </div>
+            <label for="email" class="col-md-2 col-form-check-label">Chose : </label>
+            <div class="col-md-4">
+                <select class="form-select" required>
+                    <option selected>請選擇</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-primary w-100" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
